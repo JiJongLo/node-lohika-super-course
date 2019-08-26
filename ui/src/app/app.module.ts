@@ -12,8 +12,8 @@ import {
   NbSidebarModule,
   NbSidebarService,
   NbListModule,
-  NbButtonModule, NbInputModule
-} from '@nebular/theme';
+  NbButtonModule, NbInputModule, NbCardHeaderComponent, NbCardModule, NbIconModule
+} from "@nebular/theme";
 
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
@@ -43,7 +43,9 @@ import { FileUploaderComponent } from './components/file-uploader/file-uploader.
     NbListModule,
     NbEvaIconsModule,
     HttpClientModule,
-    NbSidebarModule
+    NbSidebarModule,
+    NbCardModule,
+    NbIconModule
   ],
   providers: [
     NbSidebarService,

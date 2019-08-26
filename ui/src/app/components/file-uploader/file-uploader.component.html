@@ -1,3 +1,20 @@
+<nb-card size="medium">
+  <nb-card-header>
+    List loaded files
+  </nb-card-header>
+  <nb-list>
+    <nb-list-item *ngFor="let file of filesList$ | async">
+      <div class="d-flex justify-content-between">
+        {{ file }}
+        <a href="http://localhost:3000/upload/{{file}}" target="_blank">
+          <button nbButton ghost status="danger">
+            <nb-icon icon="download-outline"></nb-icon>
+          </button>
+        </a>
+      </div>
+    </nb-list-item>
+  </nb-list>
+</nb-card>
 <form class="example-form" (ngSubmit)="onSubmit(fileInput)">
   <input nbInput #fileInput type="file" placeholder="Select file" [formControl]="fileFormControl">
   <div class="wrapper">
