@@ -1,5 +1,7 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+
+import { FileUploaderService } from 'src/app/services/file-uploader.service';
 
 @Component({
   selector: 'app-file-uploader',
@@ -7,12 +9,13 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['./file-uploader.component.scss']
 })
 export class FileUploaderComponent implements OnInit {
-  constructor() { }
+  constructor(private fileUploader: FileUploaderService) { }
   fileFormControl = new FormControl('', [
     Validators.required,
   ]);
   ngOnInit() {
   }
   onSubmit(file) {
+    this.fileUploader.uploadFile(file).subscribe();
   }
 }

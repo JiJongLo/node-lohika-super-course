@@ -1,0 +1,10 @@
+
+nb-list-item {
+  cursor: pointer;
+  &:hover {
+    background-color: whitesmoke;
+  }
+  div {
+    outline: none;
+  }
+}
