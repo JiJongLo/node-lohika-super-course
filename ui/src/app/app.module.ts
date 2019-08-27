@@ -22,12 +22,14 @@ import { FileUploaderService } from 'src/app/services/file-uploader.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FileUploaderComponent } from './components/file-uploader/file-uploader.component';
+import { InfoSystemComponent } from './components/info-system/info-system.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FileUploaderComponent
+    FileUploaderComponent,
+    InfoSystemComponent
   ],
   imports: [
     BrowserModule,

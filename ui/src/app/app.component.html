@@ -6,7 +6,7 @@
   <nb-sidebar>
     <nb-list>
       <nb-list-item *ngFor="let link of links">
-        <div [routerLink]="link.url" >
+        <div routerLinkActive="active" [routerLink]="link.url" >
           {{ link.name }}
         </div>
       </nb-list-item>

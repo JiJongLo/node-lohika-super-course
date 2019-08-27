@@ -10,6 +10,10 @@ export class AppComponent {
     {
       name: 'File uploader',
       url: 'file-uploader'
+    },
+    {
+      name: 'System info',
+      url: 'info-system'
     }
   ];
 }
