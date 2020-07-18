@@ -27,7 +27,7 @@
     "@nestjs/common": "^6.5.3",
     "@nestjs/core": "^6.5.3",
     "eva-icons": "^1.1.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.4.0",
     "tslib": "^1.10.0",
